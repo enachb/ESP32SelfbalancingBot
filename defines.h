@@ -71,7 +71,7 @@
 
 #define MICROSTEPPING 16   // 8 or 16 for 1/8 or 1/16 driver microstepping (default:16)
 
-#define DEBUG 1   // 0 = No debug info (default) DEBUG 1 for console output
+#define DEBUG 0   // 0 = No debug info (default) DEBUG 1 for console output
 
 // AUX definitions
 #define CLR(x,y) (x&=(~(1<<y)))
