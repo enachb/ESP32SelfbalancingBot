@@ -23,7 +23,7 @@
 #define HOVERBOARDI2CADDR 8
 
 // NORMAL MODE PARAMETERS (MAXIMUN SETTINGS)
-#define MAX_THROTTLE 550
+#define MAX_THROTTLE 500 //550
 #define MAX_STEERING 140
 #define MAX_TARGET_ANGLE 14
 
@@ -33,12 +33,15 @@
 #define MAX_TARGET_ANGLE_PRO 26   // Max recommended value: 32
 
 // Default control terms for EVO 2
-#define KP 0.32
-#define KD 0.050
-#define KP_THROTTLE 0.080
-#define KI_THROTTLE 0.1
-#define KP_POSITION 0.06
-#define KD_POSITION 0.45
+#define KP 0.32 //0.32
+#define KD 0.05 //0.05
+
+#define KP_THROTTLE 0.080 //0.080
+#define KI_THROTTLE 0.1 //0.1
+
+#define KP_POSITION 0.06 //0.06
+#define KD_POSITION 0.45 //0.45
+
 //#define KI_POSITION 0.02
 
 // Control gains for raiseup (the raiseup movement requiere special control parameters)
@@ -47,7 +50,7 @@
 #define KP_THROTTLE_RAISEUP 0   // No speed control on raiseup
 #define KI_THROTTLE_RAISEUP 0.0
 
-#define MAX_CONTROL_OUTPUT 500
+#define MAX_CONTROL_OUTPUT 700
 #define ITERM_MAX_ERROR 30   // Iterm windup constants for PI control
 #define ITERM_MAX 10000
 

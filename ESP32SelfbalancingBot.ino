@@ -229,6 +229,7 @@ void loop() {
 				Serial.println(estimated_speed_filtered);
 #endif
 
+/*
 		if (positionControlMode) {
 			// POSITION CONTROL. INPUT: Target steps for each motor. Output: motors speed
 			motor1_control = positionPDControl(steps1, target_steps1,
@@ -243,6 +244,7 @@ void loop() {
 			steering = constrain(steering, -50, 50);
 		}
 
+*/
 		// ROBOT SPEED CONTROL: This is a PI controller.
 		//    input:user throttle(robot speed), variable: estimated robot speed, output: target robot angle to get the desired speed
 		target_angle = speedPIControl(dt, estimated_speed_filtered, throttle,
@@ -279,6 +281,7 @@ void loop() {
 			angle_ready = 82;
 		else
 			angle_ready = 74;  // Default angle
+     
 		if ((angle_adjusted < angle_ready) && (angle_adjusted > -angle_ready)) // Is robot ready (upright?)
 				{
 			// NORMAL MODE
