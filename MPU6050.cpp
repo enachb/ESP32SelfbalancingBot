@@ -223,8 +223,8 @@ int MPU6050_read(int start, uint8_t *buffer, int size)
 {
   int i, n, error;
 
-  Wire.beginTransmission(MPU6050_I2C_ADDRESS);
-  n = Wire.write(start);
+  I2COne.beginTransmission(MPU6050_I2C_ADDRESS);
+  n = I2COne.write(start);
   if (n != 1)
     return (-10);
 

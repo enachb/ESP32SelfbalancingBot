@@ -8,7 +8,10 @@
 #include <Arduino.h>
 #include "defines.h"
 #include "esp32-hal-timer.h"
+#include <Wire.h>
 
+TwoWire I2Cone = TwoWire(0);
+TwoWire I2Ctwo = TwoWire(1);
 
 String MAC;  // MAC address of Wifi module
 

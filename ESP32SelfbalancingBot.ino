@@ -53,8 +53,9 @@ void setup() {
 
 	Serial.begin(115200);
 
-	Wire.begin();
-
+	I2Cone.begin(21,22); // accelerometer/gyro
+  I2Cone.begin(16,17); // nunchuck emu
+  
 	initWifiAP();
 
 	initMPU6050();
